@@ -6,7 +6,7 @@ interface {{&className}} {
 {{#methods}}
     {{&methodName}}(parameters : {
     {{#parameters}}
-        '{{name}}': {{>type}}
+        '{{camelCaseName}}': {{>type}}
     {{/parameters}}
     }): {{#resultFn}}{{#responseType}}{{>type}}{{/responseType}}{{^responseType}}any{{/responseType}}{{/resultFn}};
 
