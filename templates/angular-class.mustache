@@ -72,6 +72,17 @@ angular.module('{{&moduleName}}', [])
                 this.token.headerOrQueryName = headerOrQueryName;
                 this.token.isQuery = isQuery;
             };
+
+            /**
+            * Set OAuth 2.0 Token
+            * @method
+            * @name {{&className}}#setOAuth2Token
+            * @param {string} value - token's value
+            *
+            */
+            {{&className}}.prototype.setOAuth2Token = function (value) {
+                this.setToken('Bearer ' + value, 'Authorization', false);
+            };
         {{/isSecure}}
 
         {{#methods}}
