@@ -25,12 +25,14 @@ interface Petstore {
 interface pet {
     'id': number
     'name': string
+    'owner-name': string
     'tag': string
 }
 
 interface newPet {
     'id': number
     'name': string
+    'owner-name': string
     'tag': string
 }
 

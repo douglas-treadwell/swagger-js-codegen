@@ -185,6 +185,9 @@
                 "name": {
                     "type": "string"
                 },
+                "owner-name": {
+                    "type": "string"
+                },
                 "tag": {
                     "type": "string"
                 }
@@ -200,6 +203,9 @@
                     "format": "int64"
                 },
                 "name": {
+                    "type": "string"
+                },
+                "owner-name": {
                     "type": "string"
                 },
                 "tag": {
