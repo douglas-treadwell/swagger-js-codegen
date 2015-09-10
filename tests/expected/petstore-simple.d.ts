@@ -11,6 +11,10 @@ interface Petstore {
         'pet': newPet
     }): ng.IPromise<pet>;
 
+    findOwnerById(parameters : {
+        'id': number
+    }): ng.IPromise<FindOwnerByIdResponse>;
+
     findPetById(parameters : {
         'id': number
     }): ng.IPromise<pet>;
@@ -22,6 +26,11 @@ interface Petstore {
 }
 
 // data types
+interface FindOwnerByIdResponse {
+    'id': number
+    'name': string
+}
+
 interface pet {
     'id': number
     'name': string
