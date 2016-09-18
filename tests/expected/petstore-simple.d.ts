@@ -36,6 +36,7 @@ interface pet {
     'name': string
     'owner-name'?: string
     'tag'?: string
+    'size'?: 'big' | 'small'
 }
 
 interface newPet {

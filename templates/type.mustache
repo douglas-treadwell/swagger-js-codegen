@@ -1,7 +1,7 @@
 {{! must use different delimiters to avoid ambiguities when delimiters directly follow a literal brace {. }}
 {{=<% %>=}}
 <%#isRef%><%target%><%/isRef%><%!
-%><%#isAtomic%><%tsType%><%/isAtomic%><%!
+%><%#isAtomic%><%& tsType %><%/isAtomic%><%!
 %><%#isObject%>{<%#properties%>
     '<%name%>'<%#isOptional%>?<%/isOptional%>: <%>type%><%/properties%>
 }<%/isObject%><%!

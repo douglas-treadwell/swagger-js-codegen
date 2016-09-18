@@ -236,6 +236,11 @@
                 "tag": {
                     "type": "string",
                     "required": false
+                },
+                "size": {
+                    "type": "string",
+                    "required": false,
+                    "enum": ["big", "small"]
                 }
             }
         },
