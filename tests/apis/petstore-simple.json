@@ -230,10 +230,12 @@
                     "type": "string"
                 },
                 "owner-name": {
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                 },
                 "tag": {
-                    "type": "string"
+                    "type": "string",
+                    "required": false
                 }
             }
         },

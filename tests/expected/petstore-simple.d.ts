@@ -34,8 +34,8 @@ interface FindOwnerByIdResponse {
 interface pet {
     'id': number
     'name': string
-    'owner-name': string
-    'tag': string
+    'owner-name'?: string
+    'tag'?: string
 }
 
 interface newPet {
