@@ -46,6 +46,13 @@ interface newPet {
     'tag': string
 }
 
+interface requiredPet {
+    'id': number
+    'name': string
+    'owner-name'?: string
+    'tag'?: string
+}
+
 interface errorModel {
     'code': number
     'message': string

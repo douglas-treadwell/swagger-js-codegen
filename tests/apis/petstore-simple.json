@@ -264,6 +264,30 @@
                 }
             }
         },
+        "requiredPet": {
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "name": {
+                    "type": "string",
+                    "comment": "tests that the type's 'required' property overrides the property's 'required' property",
+                    "required": false
+                },
+                "owner-name": {
+                    "type": "string",
+                    "required": false
+                },
+                "tag": {
+                    "type": "string",
+                    "required": false
+                }
+            }
+        },
         "errorModel": {
             "required": [
                 "code",
