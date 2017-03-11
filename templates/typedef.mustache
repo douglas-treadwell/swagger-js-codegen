@@ -1,12 +1,12 @@
 {{#imports}}
-/// <reference path="{{.}}" />
+    import {{name}} from '{{path}}';
 {{/imports}}
 
-interface {{&className}} {
+{{#isTypeScript}}export {{/isTypeScript}}interface {{&className}} {
 {{#methods}}
     {{&methodName}}(parameters : {
     {{#parameters}}
-        '{{name}}': {{>type}}
+        '{{name}}'{{#isOptional}}?{{/isOptional}}: {{>type}}
     {{/parameters}}
     }): {{#resultFn}}{{#responseType}}{{>type}}{{/responseType}}{{^responseType}}any{{/responseType}}{{/resultFn}};
 
@@ -15,6 +15,8 @@ interface {{&className}} {
 
 // data types
 {{#definitions}}
-interface {{name}} {{>type}}
+    {{#isTypeScript}}export {{/isTypeScript}}interface {{name}} {{>type}}
 
 {{/definitions}}
+
+{{#isTypeScript}}export default {{&className}}{{/isTypeScript}}
